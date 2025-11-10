@@ -5,6 +5,8 @@ int main(){
     double x,y=1;
     char operation;
     double answer;
+    //styling
+    std::cout<<"============The Console Calculator============\n";
     //directions
     std::cout<<"type in * or + or / or - depending on what operation you want to do\n";
     //input
@@ -17,26 +19,23 @@ int main(){
     {
     case '*':
         answer = x*y;
-        std::cout<<answer;
+        std::cout<<answer<<"\n";
         break;
     case '+':
         answer=x+y;
-        std::cout<<answer;
+        std::cout<<answer<<"\n";
         break;
     case '/':
         answer=x/y;
-        std::cout<<answer;
+        std::cout<<answer<<"\n";
         if (y==0){
-            std::cout<<"ERROR: CANNOT DIVIDE BY ZERO";
+            std::cout<<"ERROR: CANNOT DIVIDE BY ZERO\n";
         }
         break;
     case '-':
        answer=x-y;
-       std::cout<<answer;
+       std::cout<<answer<<"\n";
        break;
-    
-    default:
-        break;
     }
-
+    std::cout<<"==============================================";
 }
